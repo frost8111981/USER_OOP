@@ -15,7 +15,9 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Map<String, User> map = new HashMap<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        User yarik = new User("Ярик", "Мартынов", "Вячеславович", "программист", 29, 1);
+
+
+        User yarik = new User("Ярик", "Мартынов", "Вячеславович", "программист", 29, one. );
         User tima = new User("Тима", "Юлдашев", "Альбертович", "программист", 39, 0);
         User dima = new User("Дима", "Токарь", "Андреевич", "программист", 29, 0);
         User kirill = new User("Кирилл", "Власкин", "Викторович", "ИТ", 27, 0);
@@ -37,6 +39,10 @@ public class Main {
         task.add(three);
         task.add(four);
         task.add(five);
+
+        public void userTask() {
+            User userTask = new
+        }
 
         while (true) {
             System.out.println("                               ГЛАВНОЕ МЕНЮ");

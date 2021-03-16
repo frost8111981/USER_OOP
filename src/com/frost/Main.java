@@ -12,21 +12,11 @@ import java.util.Map;
 // 1.заявки(создать или привязать к сотр)
 
 public class Main {
+
+
     public static void main(String[] args) throws IOException {
         Map<String, User> map = new HashMap<>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-
-        User yarik = new User("Ярик", "Мартынов", "Вячеславович", "программист", 29, one. );
-        User tima = new User("Тима", "Юлдашев", "Альбертович", "программист", 39, 0);
-        User dima = new User("Дима", "Токарь", "Андреевич", "программист", 29, 0);
-        User kirill = new User("Кирилл", "Власкин", "Викторович", "ИТ", 27, 0);
-        User ilya = new User("Илья", "Куравцев", "Сергеевич", "системный администратор", 27, 0);
-        map.put(yarik.surname, yarik);
-        map.put(tima.surname, tima);
-        map.put(dima.surname, dima);
-        map.put(kirill.surname, kirill);
-        map.put(ilya.surname, ilya);
 
         ArrayList<Tasks> task = new ArrayList<>();
         Tasks one = new Tasks(1, "Монтаж", "Протянуть кабеля");
@@ -40,9 +30,18 @@ public class Main {
         task.add(four);
         task.add(five);
 
-        public void userTask() {
-            User userTask = new
-        }
+
+        User yarik = new User("Ярик", "Мартынов", "Вячеславович", "программист", 29, one.subject);
+        User tima = new User("Тима", "Юлдашев", "Альбертович", "программист", 39, two.subject);
+        User dima = new User("Дима", "Токарь", "Андреевич", "программист", 29, three.subject);
+        User kirill = new User("Кирилл", "Власкин", "Викторович", "ИТ", 27, four.subject);
+        User ilya = new User("Илья", "Куравцев", "Сергеевич", "системный администратор", 27, five.subject);
+        map.put(yarik.surname, yarik);
+        map.put(tima.surname, tima);
+        map.put(dima.surname, dima);
+        map.put(kirill.surname, kirill);
+        map.put(ilya.surname, ilya);
+
 
         while (true) {
             System.out.println("                               ГЛАВНОЕ МЕНЮ");
@@ -134,8 +133,8 @@ public class Main {
                                     System.out.println("Введите Возраст сотрудника");
                                     int age = Integer.parseInt(reader.readLine());
                                     System.out.println("Присвойте заявку");
-                                    int id = Integer.parseInt(reader.readLine());
-                                    User default1 = new User(name, surname, patronymic, prifession, age, id);
+                                    String idTask = reader.readLine();
+                                    User default1 = new User(name, surname, patronymic, prifession, age, idTask );
                                     map.put(default1.surname, default1);
                                     break;
                                 case 4:

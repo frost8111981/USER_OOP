@@ -17,6 +17,8 @@ public class User {
         this.idTask = idTask;
     }
 
+
+
     public User(){
 
     }
